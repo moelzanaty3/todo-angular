@@ -8,9 +8,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { TodoDataService, ApiService } from './_services';
+import {
+  TodoListComponent,
+  TodoListFooterComponent,
+  TodoListHeaderComponent,
+  TodoListItemComponent,
+  TodoHomeComponent
+} from './_components';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    TodoListComponent,
+    TodoListHeaderComponent,
+    TodoListFooterComponent,
+    TodoListItemComponent,
+    TodoHomeComponent
+  ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -18,9 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpModule,
     HttpClientModule,
     AppRoutingModule,
-    AppMaterialModule,
+    AppMaterialModule
   ],
-  providers: [],
+  providers: [TodoDataService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "title": "Get New Task ",
+      "body": "",
+      "complete": false,
+      "id": 1
+    },
+    {
+      "title": "Think about it ",
+      "body": "",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "title": "Smile",
+      "body": "",
+      "complete": false,
+      "id": 3
+    },
+    {
+      "title": "Cry",
+      "body": "",
+      "complete": false,
+      "id": 4
+    }
+  ]
+}

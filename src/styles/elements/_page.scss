@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  Elements > Page
+\*------------------------------------*/
+
+body {
+  color: $color-text;
+  font-size: $font-size-base;
+  font-family: $font-serif;
+  font-weight: $font-weight-light;
+  line-height: $line-height-base;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  height: 100%;
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+*::selection {
+  color: $color-white;
+  background: $color-brand;
+}

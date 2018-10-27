@@ -8,13 +8,22 @@ $btn-primary-bg-hover: #238cf6;
 $btn-secondary-bg: $color-white;
 $btn-secondary-bg-hover: $bg-color-gray;
 
-.c-btn {
+button {
   display: inline-block;
 
   padding: half($base-spacing-unit) double($base-spacing-unit);
 
   font-family: 'Play', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
   transition: $global-transition;
   text-align: center;
@@ -40,11 +49,13 @@ $btn-secondary-bg-hover: $bg-color-gray;
     color: $color-white;
     background-color: $btn-primary-bg;
     background-image: linear-gradient(76deg, #e72d70, #ee8e15);
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 10px 50px 0 rgba(238, 142, 21, 0.4);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
+      0 10px 50px 0 rgba(238, 142, 21, 0.4);
 
     @include attention() {
       background-color: $btn-primary-bg-hover;
-      box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15), 0 30px 60px 0 rgba(238, 142, 21, 0.15);
+      box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15),
+        0 30px 60px 0 rgba(238, 142, 21, 0.15);
     }
   }
 

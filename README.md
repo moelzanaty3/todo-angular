@@ -1,4 +1,4 @@
-# Todo Robusta Studio
+# Todo Angular
 
 A simple todo app, using Angular, Angular Material and the Angular CLI.
 
